@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Website Blocker",
+  "version": "1.0.0",
+  "description": "Add the reading time to Chrome Extension documentation articles",
+  "author": "Ramin Mikayilov",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"]
+    }
+  ]
+}
