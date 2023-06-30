@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Website Blocker",
+  "name": "Social Media Blocker",
   "version": "1.0.0",
-  "description": "Add the reading time to Chrome Extension documentation articles",
+  "description": "An extension that blocks access to social media websites during specific hours of the day, helping you reduce distractions and improve your productivity.",
   "author": "Ramin Mikayilov",
   "action": {
     "default_popup": "popup.html"
