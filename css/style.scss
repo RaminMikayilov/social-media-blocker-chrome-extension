@@ -1,0 +1,46 @@
+.container {
+    width: 230px;
+    padding: 5px 10px;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+
+     .title{
+        color: #5b4caf;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .time{ 
+        display: flex;
+        font-weight: bold;
+        
+        input {
+            margin-top: 5px;
+        }
+    }
+
+    .checkboxes {
+        p{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    #submit {
+        background-color: #5b4caf;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: .8rem;
+        cursor: pointer;
+        border-radius: 5px;
+        display: block;
+        margin-left: auto;
+
+        &:hover {
+            background-color: #7e6abf;
+        }
+    }
+}
