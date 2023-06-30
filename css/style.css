@@ -1,0 +1,38 @@
+.container {
+  width: 230px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .title {
+  color: #5b4caf;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.container .time {
+  display: flex;
+  font-weight: bold;
+}
+.container .time input {
+  margin-top: 5px;
+}
+.container .checkboxes p {
+  display: flex;
+  align-items: center;
+}
+.container #submit {
+  background-color: #5b4caf;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+}
+.container #submit:hover {
+  background-color: #7e6abf;
+}/*# sourceMappingURL=style.css.map */
