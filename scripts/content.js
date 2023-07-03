@@ -1,13 +1,29 @@
 const blockWebsites = () => {
   chrome.storage.sync.get("socialMediaBlockerOptions", (data) => {
-    const socialMediaBlockerOptions = data.socialMediaBlockerOptions || [];
+    const socialMediaWebsites = [
+      "facebook",
+      "twitter",
+      "instagram",
+      "youtube",
+      "linkedin",
+      "whatsapp",
+      "telegram",
+      "tiktok",
+    ];
 
-    const currentHostName = window.location.hostname;
+    const options = data.socialMediaBlockerOptions || [];
 
-    if (socialMediaBlockerOptions.includes(currentHostName)) {
-      window.location.href = chrome.runtime.getURL("blocked.html");
-    }
+    socialMediaWebsites.forEach((website) => {
+      if (options[website] && window.location.hostname.includes(website)) {
+        window.location.href = "https://www.google.com";
+      }
+    });
   });
 };
 
-window.addEventListener("load", blockWebsites);
+chrome.storage.onChanged.addListener(() => {
+  blockWebsites();
+});
+
+// Initial blocking
+blockWebsites();
