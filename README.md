@@ -2,6 +2,8 @@
 
 The Social Media Blocker Chrome Extension allows you to block access to social media websites during specific time periods, helping you stay focused and increase productivity.
 
+![app screenshot](./src/assets/img/screenshot.png)
+
 ## Features
 
 - Block access to popular social media websites such as Facebook, Twitter, Instagram, YouTube, LinkedIn, WhatsApp, Telegram, and TikTok.
