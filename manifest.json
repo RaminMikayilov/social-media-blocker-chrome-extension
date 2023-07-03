@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "Social Media Blocker",
   "version": "1.0.0",
+  "permissions": ["webRequest", "storage"],
   "description": "An extension that blocks access to social media websites during specific hours of the day, helping you reduce distractions and improve your productivity.",
   "author": "Ramin Mikayilov",
   "action": {
