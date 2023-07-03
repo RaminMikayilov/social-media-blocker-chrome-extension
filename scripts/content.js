@@ -15,7 +15,7 @@ const blockWebsites = () => {
 
     socialMediaWebsites.forEach((website) => {
       if (options[website] && window.location.hostname.includes(website)) {
-        window.location.href = "https://www.google.com";
+        window.location.href = "https://www.google.com/notfound";
       }
     });
   });
