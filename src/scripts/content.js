@@ -1,3 +1,7 @@
+const redirect = () => {
+  window.location.href = "https://www.google.com/notfound";
+}
+
 const blockWebsites = () => {
   chrome.storage.sync.get("socialMediaBlockerOptions", (data) => {
     const socialMediaWebsites = [
@@ -33,8 +37,11 @@ const blockWebsites = () => {
 
     if (checkTime()) {
       socialMediaWebsites.forEach((website) => {
+        if (options[website] && (website === 'twitter' && window.location.hostname === 'x.com')) {
+          redirect();
+        }
         if (options[website] && window.location.hostname.includes(website)) {
-          window.location.href = "https://www.google.com/notfound";
+          redirect();
         }
       });
     }
